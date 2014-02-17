@@ -1,0 +1,6 @@
+Revision history for Perl extension Task::Git::LongList1.
+
+0.01  Sat Feb 15 10:29:04 2014
+	- original version; created by h2xs 1.23 with options
+		-ABX -b 5.5.0 -n Task::Git::LongList1
+
