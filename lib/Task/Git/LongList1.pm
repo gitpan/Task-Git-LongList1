@@ -1,10 +1,10 @@
-package Task::LongList1;
+package Task::Git::LongList1;
 
 use 5.005;
 use strict;
 use warnings;
 
-our $VERSION = '0.01';
+our $VERSION = '0.02';
 
 1;
 
