@@ -1,4 +1,4 @@
-Task-Git-LongList1 version 0.02
+Task-Git-LongList1 version 0.03
 ==================================
 
 To install this module type the following:
@@ -13,15 +13,13 @@ DEPENDENCIES
 This module requires these other modules and libraries:
 
   Test
+  Test::More
+  Test::Aggregate
 
-COPYRIGHT AND LICENCE
-
-Put the correct copyright and licence information here.
+COPYRIGHT AND LICENSE
 
 Copyright (C) 2014 by Kevin W. Henwood
 
-This library is free software; you can redistribute it and/or modify
-it under the same terms as Perl itself, either Perl version 5.16.2 or,
-at your option, any later version of Perl 5 you may have available.
+This library is free software; you can redistribute it and/or modify it under the same terms as Perl itself.
 
 

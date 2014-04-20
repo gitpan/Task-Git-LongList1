@@ -3,37 +3,47 @@ abstract: ~
 author:
   - 'Kevin W. Henwood <Khen1950fx@yahoo.com>'
 build_requires:
-  ExtUtils::MakeMaker: '6.36'
-  Test: 0
+  ExtUtils::MakeMaker: 6.36
+  Test::Aggregate: 0
 configure_requires:
-  ExtUtils::MakeMaker: '6.36'
+  ExtUtils::MakeMaker: 6.36
 distribution_type: module
 dynamic_config: 1
-generated_by: 'Module::Install version 1.06'
+generated_by: 'Module::Install version 1.08'
 license: perl
 meta-spec:
   url: http://module-build.sourceforge.net/META-spec-v1.4.html
-  version: '1.4'
+  version: 1.4
 name: Task-Git-LongList1
 no_index:
   directory:
     - inc
     - t
 requires:
+  App::Cmd::Setup: 0
   Archive::Tar: 0
   Archive::Zip: 0
   AutoLoader: 0
+  B::Keywords: 0
+  CLI::Helpers: 0
   CPAN: 0
   CPAN::Meta: 0
   CPAN::Meta::Requirements: 0
   CPAN::Meta::YAML: 0
   Capture::Tiny: 0
   Carp: 0
+  Class::Data::Inheritable: 0
   Class::ErrorHandler: 0
+  Class::Inspector: 0
   Class::Load: 0
   Class::Loader: 0
+  Class::Tiny: 0
+  Clone: 0
   Compress::Raw::Bzip2: 0
+  Compress::Raw::Zlib: 0
   Compress::Zlib: 0
+  Config::GitLike: 0
+  Config::Tiny: 0
   Convert::ASCII::Armour: 0
   Convert::ASN1: 0
   Convert::PEM: 0
@@ -42,47 +52,54 @@ requires:
   Crypt::DES: 0
   Crypt::DES_EDE3: 0
   Crypt::DSA: 0
-  Crypt::OpenPGP: 0
-  Crypt::Primes: 0
   Crypt::RIPEMD160: 0
-  Crypt::RSA: 0
-  Crypt::Random: 0
   Crypt::Twofish: 0
   Data::Buffer: 0
   Data::Dump: 0
   Data::Dumper: 0
   Data::OptList: 0
   Data::Validate::Type: 0
+  Devel::CheckLib: 0
   Devel::StackTrace: 0
+  Devel::Symdump: 0
   Digest::MD2: 0
   Digest::MD5: 0
   Digest::SHA: 0
   Digest::SHA1: 0
-  Digest::SHA256: 0
   Digest::SHA::PurePerl: 0
   Digest::base: 0
   Dist::CheckConflicts: 0
+  Email::Address: 0
   Encode: 0
   Encode::Locale: 0
+  Exception::Class: 0
   Exporter: 0
   ExtUtils::CBuilder: 0
   ExtUtils::Config: 0
   ExtUtils::Helpers: 0
-  ExtUtils::Install: 0
   ExtUtils::InstallPaths: 0
+  ExtUtils::Installed: 0
   ExtUtils::MakeMaker: 0
   ExtUtils::Manifest: 0
   ExtUtils::ParseXS: 0
+  File::Find::Rule: 0
   File::HomeDir: 0
   File::Listing: 0
   File::Path: 0
+  File::Remove: 0
+  File::ShareDir: 0
+  File::ShareDir::Install: 0
+  File::ShareDir::ProjectDistDir: 0
+  File::Slurp: 0
   File::Spec: 0
   File::Temp: 0
   File::Which: 0
   Filter::Util::Call: 0
   Getopt::Long: 0
-  Git::CPAN::Hook: 0
+  Getopt::Long::Descriptive: 0
+  Git::Code::Review: 0
   Git::Deploy: 0
+  Git::Raw: 0
   Git::Repository: 0
   Git::Repository::Plugin::Blame: 0
   Git::Repository::Plugin::Log: 0
@@ -95,6 +112,8 @@ requires:
   HTTP::Headers::Util: 0
   HTTP::Negotiate: 0
   HTTP::Tiny: 0
+  Hook::LexWrap: 0
+  IO::CaptureOutput: 0
   IO::HTML: 0
   IO::Handle: 0
   IO::Pty: 0
@@ -104,11 +123,11 @@ requires:
   IO::Zlib: 0
   IPC::Run: 0
   IPC::Run3: 0
-  Inline::C: 0
   Inline::Files: 0
   JSON::PP: 0
   LWP::MediaTypes: 0
   LWP::UserAgent: 0
+  Lingua::EN::Inflect: 0
   List::MoreUtils: 0
   Locale::Maketext: 0
   Locale::Maketext::Lexicon: 0
@@ -116,34 +135,52 @@ requires:
   Log::Agent: 0
   MIME::Base64: 0
   Math::BigInt: 0
-  Math::BigInt::GMP: 0
-  Math::Pari: 0
   Memoize: 0
+  Mixin::Linewise::Readers: 0
   Module::Build: 0
   Module::Build::Tiny: 0
+  Module::CoreList: 0
   Module::Implementation: 0
   Module::Load: 0
   Module::Load::Conditional: 0
   Module::Metadata: 0
+  Module::Pluggable: 0
   Module::Runtime: 0
   Module::Signature: 0
   Net::FTP: 0
   Net::HTTP: 0
   Net::Ping: 0
+  Number::Compare: 0
+  PPI: 0
+  PPIx::Regexp: 0
+  PPIx::Utilities::Statement: 0
   Package::Stash: 0
   Params::Check: 0
   Params::Util: 0
   Parse::CPAN::Meta: 0
   Parse::RecDescent: 0
+  Path::FindDev: 0
+  Path::IsDev: 0
+  Path::Tiny: 0
   Perl6::Slurp: 0
+  Perl::Critic: 0
   Perl::MinimumVersion: 0
   Perl::OSType: 0
   Perl::Tidy: 0
+  PerlIO::utf8_strict: 0
+  Pod::Coverage::TrustPod: 0
   Pod::Escapes: 0
+  Pod::Eventual::Simple: 0
   Pod::Man: 0
+  Pod::Parser: 0
+  Pod::PlainText: 0
   Pod::Simple: 0
+  Pod::Spell: 0
   Pod::Usage: 0
   Probe::Perl: 0
+  Readonly: 0
+  Readonly::XS: 0
+  Role::Tiny: 0
   Safe: 0
   Scalar::Util: 0
   Socket: 0
@@ -151,11 +188,14 @@ requires:
   Socket::GetAddrInfo: 0
   Sort::Versions: 0
   Storable: 0
+  String::Format: 0
+  Sub::Exporter: 0
   Sub::Install: 0
   Sub::Name: 0
   Sub::Uplevel: 0
   System::Command: 0
   TAP::Harness::Env: 0
+  Task::Weaken: 0
   Term::ANSIColor: 0
   Term::ReadKey: 0
   Term::ReadLine: 0
@@ -163,6 +203,9 @@ requires:
   Test: 0
   Test::CPAN::Meta: 0
   Test::Deep: 0
+  Test::DistManifest: 0
+  Test::Distribution: 0
+  Test::EOL: 0
   Test::Exception: 0
   Test::FailWarnings: 0
   Test::Fatal: 0
@@ -170,8 +213,13 @@ requires:
   Test::MinimumVersion: 0
   Test::More: 0
   Test::NoWarnings: 0
+  Test::Object: 0
+  Test::Perl::Critic: 0
+  Test::Pod: 0
+  Test::Pod::Coverage: 0
   Test::Requires: 0
   Test::Script: 0
+  Test::SubCalls: 0
   Test::Synopsis: 0
   Test::Tester: 0
   Test::Type: 0
@@ -191,14 +239,14 @@ requires:
   XSLoader: 0
   YAML: 0
   YAML::Syck: 0
-  base: 0
   constant: 0
   if: 0
   lib: 0
   parent: 0
   perl: '5.005'
+  threads: 0
   threads::shared: 0
   version: 0
 resources:
   license: http://dev.perl.org/licenses/
-version: '0.02'
+version: '0.03'
